@@ -1,0 +1,280 @@
+#header {
+  width: 100%;
+}
+
+#header .menu ul li {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#header .menu ul li:hover {
+  color: aqua;
+}
+
+#header .menu ul li:first-child {
+  border-bottom: 1px solid white;
+}
+
+#slider {
+  background: url(../foto/banner1-4.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+#slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#slider .slider-count {
+  position: absolute;
+  z-index: 15;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#slider .slider-count li {
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+#slider .slider-count li.dots-active {
+  border-bottom: 2px solid #fff;
+}
+
+#slider .slider-content {
+  position: relative;
+  z-index: 5;
+  color: aliceblue;
+}
+
+#service-slider {
+  margin-top: -140px;
+  margin-bottom: 5rem;
+}
+
+#service-slider .service-item {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: #26313c;
+  color: seashell;
+}
+
+#service-slider .service-item i {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+#service-slider .service-item:hover i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#service-slider .service-item.service-item-active {
+  background: slategray;
+  padding: 4rem 1.5rem;
+  margin-top: -15px;
+}
+
+#service-slider .service-item h3 {
+  margin: 15px 0;
+}
+
+#aboutus .about-left {
+  margin-top: 15%;
+}
+
+#aboutus .btn-learn {
+  background: steelblue;
+  border-radius: 25px;
+  padding: 5px 25px;
+  margin-top: 5%;
+}
+
+#proces {
+  background: #292b2b;
+  height: 70vh;
+  margin-top: 10%;
+}
+
+#proces .pro1 {
+  color: white;
+  margin-top: 8%;
+}
+
+#proces .pro2 {
+  color: white;
+  position: absolute;
+}
+
+#proces .num {
+  margin-top: 25%;
+  margin-left: 50%;
+}
+
+#proces .num li {
+  height: 90px;
+  width: 90px;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 100%;
+  line-height: 90px;
+}
+
+#proces .num li:hover {
+  background: blue;
+}
+
+#proces .num p {
+  margin-top: 25px;
+  margin-left: 19px;
+}
+
+#proces .num span {
+  margin-top: 35px;
+  text-align: center;
+  width: 130px;
+  font-size: 13px;
+  margin-left: -15px;
+}
+
+#app {
+  margin-top: 10%;
+}
+
+#app .app3 {
+  margin-top: 50%;
+  margin-left: 65%;
+  width: 150%;
+}
+
+#app .app3 i {
+  margin-left: 35%;
+  font-size: 28px;
+  padding: 10px;
+}
+
+#app .app4 {
+  margin-top: 220%;
+  margin-left: -50%;
+}
+
+#app .app4 i {
+  margin-left: 35%;
+  font-size: 28px;
+  padding: 10px;
+}
+
+#app .app4 p {
+  width: 100%;
+}
+
+#app .app5 img {
+  margin-top: 19%;
+}
+
+#app .app6 {
+  margin-top: 46%;
+}
+
+#app .app6 p {
+  width: 130%;
+}
+
+#app .app6 i {
+  font-size: 28px;
+  padding: 10px;
+  margin-left: -9px;
+}
+
+#app .app7 {
+  margin-top: 225%;
+  margin-left: -111%;
+}
+
+#app .app7 i {
+  font-size: 28px;
+  padding: 10px;
+  margin-left: -9px;
+}
+
+#app .app7 p {
+  width: 80%;
+}
+
+#since {
+  margin-top: 10%;
+  background: url(../foto/counter-bg.jpg);
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background-position: 5px 1330px;
+  background-attachment: fixed;
+}
+
+#since .sin-item {
+  color: white;
+  text-align: center;
+  margin-top: 40%;
+}
+
+#since .sin-item2 h4 {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 55%;
+}
+
+#worker {
+  margin-top: 40%;
+}
+
+#worker .worker-item:hover .worker-img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#worker .worker-item:hover .worker-info {
+  color: white;
+}
+
+#worker .worker-item:hover .worker-info::after {
+  top: 0;
+  opacity: 1;
+}
+
+#worker .worker-item .worker-img {
+  overflow: hidden;
+}
+
+#worker .worker-item .worker-img img {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#worker .worker-item .worker-info {
+  position: relative;
+  overflow: hidden;
+}
+
+#worker .worker-item .worker-info::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#2e79e9), color-stop(50%, #58aafc), to(#5daaf7));
+  background: linear-gradient(to right, #2e79e9 0%, #58aafc 50%, #5daaf7 100%);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=style.css.map */
